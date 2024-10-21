@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* body{
+
+    color: white;
+    background-color: #850534;
+} */
+
+.container{
+    width: 100%;
+  min-height: 100vh;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+}
+
+.calculator{
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.calculator h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+    line-height: 1;
+}
+
+.calculator h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.calculator .input-box{
+    display: flex;
+align-items: center;
+  
+    margin: 40px 0;
+   padding: 35px;
+   background-color: rgba(255, 255, 255, 0.2); /* Light translucent background */
+   border-radius: 5px;
+}
+
+.input-box input{
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    outline: 0;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    font-size: 18px;
+}
+
+.input-box button {
+    background-color: #ffffff; /* Pure white */
+    color: #ff512f; /* Use one of the gradient colors for text */
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Adds more depth on hover */
+}
+
+.input-box input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    background-position: calc(100% - 10px);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    background-size: 30px;
+    cursor: pointer;
+}
+
+
+#result strong{
+    font-size: 25px;
+    padding-top: 20px;
+    font-weight: bold;
+}
